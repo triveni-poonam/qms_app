@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Email Account",
+  "enabled": 1,
+  "modified": "2025-03-27 12:22:24.515012",
+  "module": "QMS Module",
+  "name": "EmailClientScript",
+  "script": "frappe.ui.form.on('Email Account', {\n\trefresh: function(frm) {\n        frappe.msgprint(__('Hello! This is a test script for Email Account.'));\n    },\n    validate: function(frm) {\n        if (!frm.doc.email_id) {\n            frappe.msgprint(__('Email ID is required!'));\n            frappe.validated = false;\n        }\n    }\n})",
+  "view": "Form"
+ }
+]

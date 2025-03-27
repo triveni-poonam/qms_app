@@ -5,6 +5,10 @@ app_description = "QMS APP"
 app_email = "QMS@FRAPPE.COM"
 app_license = "mit"
 
+from .fixtures import fixtures
+
+
+
 # Apps
 # ------------------
 
