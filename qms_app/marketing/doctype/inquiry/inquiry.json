@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-28 15:30:35.234922",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "inquiry_form_section",
+  "inquery_date",
+  "customer_name",
+  "contact_person",
+  "contact_number",
+  "column_break_ogpj",
+  "data_nthv",
+  "item_requirement",
+  "require_quantity",
+  "any_specific_remarks",
+  "column_break_xfqr",
+  "enquiry_reviewed_and_accepted_by",
+  "status",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "inquery_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Inquiry Date",
+   "placeholder": "Select the inquiry date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name:",
+   "placeholder": "Select customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Contact Person:",
+   "length": 30,
+   "placeholder": "Enter contact person name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Contact Number:",
+   "placeholder": "Enter contact number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ogpj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_nthv",
+   "fieldtype": "Autocomplete",
+   "in_list_view": 1,
+   "label": "Mode of Inquiry:",
+   "options": "Email\nPhone Call\nWhatsApp\nWalk-In\nWebsite\nSocial Media\nReferral\nEvent/Exhibition\nOthers",
+   "placeholder": "Select the mode of inquiry",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_requirement",
+   "fieldtype": "Autocomplete",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Requirement:",
+   "options": "Blood Pressure Monitors\nGlucose Meters\nECG Machines\nPulse Oximeters\nThermometers\nUltrasound Machines\nMRI Machines\nCT Scanners",
+   "placeholder": "Select the item requirement",
+   "reqd": 1
+  },
+  {
+   "fieldname": "require_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Require Quantity:",
+   "placeholder": "Enter the require quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "any_specific_remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Any Specific Remarks:",
+   "placeholder": "Enter any additional details or special instructions here."
+  },
+  {
+   "fieldname": "column_break_xfqr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "enquiry_reviewed_and_accepted_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Enquiry Reviewed and Accepted By:",
+   "options": "User",
+   "placeholder": "Select reviewed and accepted by"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Autocomplete",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status:",
+   "options": "Pending\nIn Progress\nOn Hold\nApproved\nClosed",
+   "placeholder": "Select status"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks:",
+   "placeholder": "Provide any relevant notes"
+  },
+  {
+   "fieldname": "inquiry_form_section",
+   "fieldtype": "Section Break",
+   "label": "Inquiry Form"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-28 16:43:14.047659",
+ "modified_by": "Administrator",
+ "module": "Marketing",
+ "name": "Inquiry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
